@@ -1,0 +1,599 @@
+.topbar-wrapper{
+    /* 设置宽度全屏 */
+    width: 100%;
+    height: 40px;
+    background-color: #333;
+    line-height: 40px;
+}
+.topbar a{
+    font-size: 12px;
+    color:#b0b0b0;
+    display: block;
+}
+.topbar a:hover{
+    color:#fff;
+}
+.topbar .line{
+ color: #424242; 
+ font-size: 12px;
+ margin: 0 7px;
+}
+.service,.topbar li{
+    float: left;
+}
+.app{
+    position: relative;
+}
+.app::after{
+    display: none;
+    content: '';
+    position: absolute;
+    border: 8px solid transparent;
+    border-bottom-color:#fff;
+    top: 0;
+    margin-top: 24px;
+    margin-left: 10px;
+}
+.bb:hover  .app::after{
+    display: block;
+}
+.app:hover .qrcode{
+   height: 148px;
+}
+.app .qrcode{
+    /* display: none; */
+    width: 124px;
+    height: 0;
+    line-height: 1;
+    background-color:#fff;
+    box-shadow: 0 0 10px rgba(0, 0,0, 0.3);
+    text-align: center;
+    position: absolute;
+    left: -42px;
+    /* bottom: 0px; */
+    z-index: 10;
+    transition: height 0.3s;
+    overflow: hidden;
+}
+.app .qrcode img{
+    width: 90px;
+    margin:17px;
+    margin-bottom: 10px;
+}
+.qrcode span{
+    color:#000;
+    font-size: 14px;
+}
+.shop-cart{
+    position: relative;
+    margin-left: 26px;
+}
+.shop-cart,.user-info{
+    float:right;
+}
+.shop-cart a{
+    width: 120px;
+    background-color: #424242;
+    text-align: center;
+    border: transparent;
+    height: 40px;
+}
+.shop-cart i{
+    margin-right: 2px;
+}
+.shop-cart:hover a{
+    color: #ff6700;
+    background-color: #fff;
+}
+.shop-cart span{
+   position: absolute;
+    width: 320px;
+    height: 0px;
+    background-color: #fff;
+    right: 0;
+    top: 0;
+    margin-top: 40px;
+    z-index: 9999;
+    transition:height 0.3s;
+    color: #000;
+    text-align: center;
+    line-height: 100px;
+    box-shadow: 0 3px 3px rgba(0, 0,0, 0.3);
+  
+    overflow: hidden;
+
+}
+.shop-cart:hover span{
+/* bottom: -100px; */
+height:100px;
+}
+.header{
+    height: 100px;
+}
+.header .logo{
+    float: left;
+    margin-top: 22px;
+    width: 55px;
+    height: 55px;
+    position: relative;
+    overflow: hidden;
+    /* logo中间隐藏文字 */
+    text-indent: -9999px;
+}
+.header .logo a{
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    background-color: #ff6700;
+    background-image: url(../img/mi-logo.png);
+    background-position: center;
+    left: 0;
+    transition: left  0.3s;
+    
+}
+.header .logo .home{
+    background-image: url(../img/mi-home.png);
+    left: -55px;
+}
+.header .logo:hover .mi{
+    left: 55px;
+}
+.header .logo:hover .home{
+    left: 0;
+}
+/* 设置中间导航条 */
+.header .nav{
+    /* width: 850px; */
+    height: 100px;
+    background-color:#fff;
+    line-height: 100px;
+    padding-left: 58px;
+}
+.header .nav-wrapper{
+    float: left;
+    margin-left: 7px;
+}
+.nav >li{
+    float: left;
+}
+.nav-wrapper li a{
+    display: block;
+    font-size: 16px;
+    margin-right: 20px;
+  
+}
+/* 隐藏全部商品 */
+.all-goods{
+    visibility: hidden;
+}
+.nav-wrapper li a:hover{
+    color: #ff6700;
+}
+.header-wrapper{
+position: relative;
+}
+.tcc{
+    height: 0;
+    width: 100%;
+    background-color:#fff;
+    overflow: hidden;
+    /* border-top:1px solid rgb(224,224,244);
+    box-shadow: 0 2px 2px rgba(0, 0,0, 0.3); */
+    position: absolute;
+    top: 100px;
+    left: 0;
+    transition: height 0.3s;
+    z-index: 9999;
+}
+/* .nav li:not(:first-of-type):not(:nth-child(10)):not(:nth-child(9)):hover~.tcc,
+.tcc:hover
+{
+    height: 228px;
+     border-top:1px solid rgb(224,224,244);
+    box-shadow: 0 2px 2px rgba(0, 0,0, 0.3);
+} */
+.nav .show-goods:hover~.tcc,
+.tcc:hover {
+     height: 228px;
+border-top:1px solid rgb(224,224,244);
+box-shadow: 0 2px 2px rgba(0, 0,0, 0.3);
+}
+.yi{
+    position: relative;
+}
+
+.diyi{
+    position: absolute;
+    width: 1226px;
+    height: 0px;
+    float: left;
+    left: -236px;
+    z-index: 999999;
+    transition: height 0.3s;
+    overflow: hidden;
+
+}
+.er{
+    position: relative;
+}
+.dier{
+    position: absolute;
+    width: 1226px;
+    height: 0px;
+    float: left;
+    left: -320px;
+    z-index: 999999;
+    transition: height 0.3s;
+    overflow: hidden;
+
+}
+.diyi a,
+.dier a{
+    float: left;
+    width: 150px;
+    height: 200px;
+    margin-top: 30px;
+    position: relative;
+    line-height: 1;
+    text-align: center;
+ 
+}
+.diyi a p,
+.dier a p{
+    color: #ff6700;
+}
+.diyi a:not(:last-child):after,
+.dier a:not(:last-child):after{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 110px;
+    left: 156px;
+    bottom: 60px;
+  background-color: #000;
+
+}
+/* .show-goods:hover .diyi,
+.tcc:hover{
+    height: 228px;
+} */
+.diyi li a:hover{
+    color: #000;
+}
+
+.y{
+    position: absolute;
+    width: 993px;
+    height: 460px;
+    background-color: #fff;
+    right: 0;
+    bottom: 0;
+    left: 234px;
+    display: none;
+}
+.y-one{
+    overflow: hidden;
+}
+.y .y-one a{
+    margin: 15px 0;
+     width: 240px;
+     height: 76px;
+    
+     float: left;  
+     color: #000;
+}
+.y .y-one a i{
+    position: relative;
+    display: block;
+    left: 70px;
+    bottom: 80px;
+   
+}
+
+.y-one a img{
+    width: 76px;
+}
+.sj-dhk:hover .y{
+   display: block;
+   box-shadow: 0 0 3px rgba(0, 0,0, 0.3);
+}
+.y .y-one a:hover{
+    background-color: #fff;
+    color: #ff6700;
+}
+.ss-wrapper{
+    width: 296px;
+    height: 50px;
+    /* background-color:pink; */
+    float: right;
+    margin-top: 25px;
+    /* border: 1px solid rgb(224,224,244); */
+}
+.ss-wrapper .ss-inp{
+    float: left;
+    width: 244px;
+    height: 50px;
+    padding: 0 10PX;
+    border:1px solid rgb(224,224,244);
+    outline: none;
+    font-size: 16px;
+}
+/* 设置input获取焦点后的样式*/
+.ss-wrapper .ss-inp:focus,
+.ss-wrapper .ss-inp:focus+button{
+outline: 1px solid #ff6700;
+}
+.ss-wrapper .ss-btn{
+    width: 52px;
+    height: 50px;
+    float: left;
+    border: none;
+    background-color: #fff;
+    color: #616161;
+    font-size: 20px;
+    border:1px solid rgb(224,224,244);
+    border-left: none;
+    outline: none;
+}
+.ss-btn:hover{
+    background-color: #ff6700;
+    border:1px solid #ff6700;
+}
+.all-goods-wrapper{
+    position: relative;
+}
+/* 设置左侧导航条的样式 */
+.left-menu{
+    width: 234px;
+    height: 460px;
+    position: absolute;
+    padding-top: 20px;
+    background-color: rgba(0,0,0,.6);
+    left:-120px;
+    z-index: 999;
+}
+.left-menu li a{
+    display: block;
+    height: 42px;
+    line-height: 42px;
+    padding-left: 20px;
+    color: #fff;
+    margin-right: 0;
+    font-size: 14px;
+}
+.left-menu li a .iconfont{ 
+    position: absolute;
+    right: 0;
+    padding-right: 20px;
+}
+.left-menu li a:hover{
+    color: #fff;
+    background-color: #ff6700;
+
+}
+.banbaner{
+  position: relative;
+  height: 460px;
+  overflow: hidden;
+}
+.img-list{
+    position:absolute;
+    left: 0;
+}
+/* 设置banbaner */
+.banbaner .img-list li{
+   width:1226px ;
+    float: left;
+}
+.banbaner img{
+    width: 100%;
+}
+.pointer{
+    position: absolute;
+    bottom:22px;
+    /* right: 1005px; */
+    margin-left: 1100px;
+}
+.pointer a{
+    float: left;
+    width: 10px;
+    height: 10px;
+    border: 2px rgba(255,255,255,.4) solid;
+    border-radius: 50%;
+    background-color:rgba(0,0,0,0.4);
+    margin-left:6px ;
+}
+.pointer a:hover,
+.pointer a:active{
+    background-color: rgba(255,255,255,.4);
+    border: ragb(0,0,0,0.4) solid;
+}
+/* 设置两个箭头 */
+.prev-next a{
+  position: absolute;
+    width: 41px;
+    height: 69px;
+background-image: url(../img/icon-slides.png);
+    /* background-color: red; */
+top: 0;
+bottom: 0;
+margin: auto 0;
+}
+.prev{
+    left: 234px;
+    background-position: -84px 0;
+}
+.next{
+    right: 0;
+ 
+    background-position:-125px 0;
+}
+.next:hover{
+    background-position:-42px 0;
+}
+.prev:hover{
+    background-position:0 0;
+}
+/* 设置回到顶部元素 */
+.back-top{
+    width: 26px;
+    height: 206px;
+    background-color:pink;
+    position: fixed;
+    bottom: 100px;
+    right: 50%;
+    margin-right: -639px;
+}
+
+.ad{
+
+  /* background-color: red;  */
+  height: 170px; 
+
+  left: 0;
+}
+.ad .shortcut,
+.ad .imgs,
+.ad .shortcut a{
+    float: left;
+}
+.shortcut{
+    width: 234px;
+    height: 168px;
+    background-color: #5f5750;
+    margin-right: 14px;
+    padding-top: 2px;
+}
+.shortcut a{
+    display: block;
+    color: #cfccca;
+    height: 84px;
+    width: 76px;
+    text-align: center;
+}
+.shortcut a{
+    position: relative;
+}
+.shortcut a::before{
+    content: '';
+    position: absolute;
+    width:64px;
+    height: 1px;
+    left: 0px;
+    right: 0;
+    margin: 0 7px;
+    background-color: #fff;
+    
+}
+.shortcut a::after{
+    content: '';
+    position: absolute;
+    width:1px;
+    height: 71px;
+    left: 0;
+    top: 0;
+    margin: 4px 0;
+    background-color: #fff;
+    
+}
+.shortcut a:hover{
+    color: #fff;
+}
+.shortcut a i{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    font-size: 20px;
+}
+/* .ad{
+    position: relative;
+}
+.imgs{
+    position: absolute;
+    right: 0;
+} */
+.ad .imgs li{
+    width: 316px;
+    margin-right: 15px;
+    float: left;
+}
+.ad .imgs li:last-child{
+    margin: 0;
+}
+.sj-bk{
+    margin-top: 30px;
+}
+.sj-tb{
+    height: 58px;
+    line-height: 58px;
+}
+.sj-tb a{
+    font-size: 30px;
+}
+.sj-tb span{
+    float: right;
+    font-size: 16px;
+    line-height: 58px;
+}
+.sj-tb span i{
+    float: right;
+    font-size: 30px;
+ 
+
+}
+.sj-tb span:hover{
+    color: #ff6700;
+}
+.conter{
+    height: 630px;
+    width: 1226px;
+}
+.conter .left .cf{
+    width: 240px;
+    display: block;
+    float: left;
+}
+.conter .right{
+    margin-left: 20px;
+    width: 966px;
+    float: left;
+}
+.conter .right{
+    text-align: center;
+}
+.conter .right h2{
+    color:#616161;
+}
+.conter .right p{
+    color: #ff6700;
+}
+.conter .right .cf{
+    width: 228px;
+    height: 305px;
+    display: block;
+    float: left; 
+    border:rgba(0, 0,0, 0.1) solid 1px; 
+}
+.conter .right .cf:not(:nth-child(4)):not(:nth-child(8)){
+  margin-right: 18px;
+}
+.conter .right .cf:nth-child(5){
+    margin-top: 20px;
+}
+.conter .right .cf:nth-child(6){
+    margin-top: 20px;
+}
+.conter .right .cf:nth-child(7){
+    margin-top: 20px;
+}
+.conter .right .cf:nth-child(8){
+    margin-top: 20px;
+}
+/* .left .cf{
+    box-shadow: 0 15px 30px rgba(0,0,0,.1);
+    transform: translate3d(0,-2px,0);
+} */
+.cf:hover{
+    box-shadow: 0 15px 30px rgba(0,0,0,.1);
+    transform: translate3d(0,-2px,0);
+}
